@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GARA — Abdel Aziz Adama GARA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script>
+    (function () {
+      // 1. Langue sauvegardée par l'utilisateur ?
+      var saved = null;
+      try { saved = localStorage.getItem('gara-lang'); } catch (e) {}
+
+      // 2. Sinon, langue du navigateur
+      var nav = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+      var lang = saved || (nav.startsWith('fr') ? 'fr' : 'en');
+
+      // 3. Redirection
+      window.location.replace(lang + '/index.html');
+    })();
+  </script>
+
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=fr/index.html" />
+    <p>Redirection… <a href="fr/index.html">Français</a> · <a href="en/index.html">English</a></p>
+  </noscript>
+</head>
+<body></body>
+</html>
