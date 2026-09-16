@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Abdel Aziz Adama GARA</title>
+  <meta name="description" content="Contactez Abdel Aziz Adama GARA — jeune scientifique et aspirant ingénieur du Burkina Faso." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">G</span>
+        <span>
+          GARA
+          <small>Young Scientist</small>
+        </span>
+      </a>
+
+      <div class="lang-switch" aria-label="Langue">
+        <a data-lang="fr" href="contact.html" class="active">FR</a>
+        <a data-lang="en" href="../en/contact.html">EN</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="projects.html">Projets</a>
+        <a href="research.html">Recherche</a>
+        <a href="achievements.html">Réalisations</a>
+        <a href="academics.html">Académique</a>
+        <a href="skills.html">Compétences</a>
+        <a href="documents.html">Documents</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Restons en contact</h1>
+        <p class="lead">
+          Vous souhaitez échanger, collaborer ou en savoir davantage sur mes projets ?
+          Je suis ouvert aux échanges autour des sciences, de l'ingénierie, de
+          l'intelligence artificielle, de la robotique et de l'innovation.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <!-- Carte identité -->
+        <div class="card reveal" style="
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 24px;
+          flex-wrap: wrap;
+          margin-bottom: 40px;
+        ">
+          <img
+            src="../images/photo.jpg"
+            alt="Portrait d'Abdel Aziz Adama GARA"
+            style="
+              width: 90px;
+              height: 90px;
+              border-radius: 50%;
+              object-fit: cover;
+              border: 3px solid var(--accent);
+              flex-shrink: 0;
+            "
+          />
+          <div style="flex:1; min-width:220px;">
+            <h2 style="margin-bottom:4px;">Abdel Aziz Adama GARA</h2>
+            <p class="muted" style="font-size:.92rem;">
+              Young Scientist &amp; Aspiring Engineer
+            </p>
+          </div>
+        </div>
+
+        <!-- Cartes de contact -->
+        <div class="grid grid-2">
+
+          <!-- Localisation -->
+          <div class="card reveal">
+            <div class="icon">📍</div>
+            <h3>Localisation</h3>
+            <p>Ouagadougou, Burkina Faso</p>
+          </div>
+
+          <!-- Email -->
+          <a href="mailto:abdelgara1022@gmail.com" class="card reveal">
+            <div class="icon">✉️</div>
+            <h3>E-mail</h3>
+            <p>abdelgara1022@gmail.com</p>
+            <span class="link">Envoyer un message</span>
+          </a>
+
+          <!-- Téléphone -->
+          <a href="tel:+22653224081" class="card reveal">
+            <div class="icon">📞</div>
+            <h3>Téléphone</h3>
+            <p>+226 53 22 40 81</p>
+            <span class="link">Appeler</span>
+          </a>
+
+          <!-- LinkedIn -->
+          <a
+            href="https://www.linkedin.com/in/gara-abdel-aziz-adama-31367538a"
+            target="_blank"
+            rel="noopener"
+            class="card reveal"
+          >
+            <div class="icon">💼</div>
+            <h3>LinkedIn</h3>
+            <p>linkedin.com/in/gara-abdel-aziz-adama-31367538a</p>
+            <span class="link">Voir le profil</span>
+          </a>
+
+        </div>
+
+        <!-- Message d'ouverture -->
+        <div class="reveal mt-4" style="
+          border-left: 3px solid var(--accent);
+          padding: 20px 24px;
+          background: var(--surface);
+          border-radius: 12px;
+          margin-top: 40px;
+        ">
+          <p class="lead" style="margin:0;">
+            💬 <strong>Ouvert aux collaborations</strong> — N'hésitez pas à me contacter
+            pour discuter de projets scientifiques, technologiques, éducatifs ou de toute
+            initiative liée à l'innovation.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year></span> Abdel Aziz Adama GARA</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
